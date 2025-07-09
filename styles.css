@@ -1,109 +1,121 @@
-:root {
-  --bg: #f2f2f2;
-  --text: #222;
-  --card: white;
-  --btn: #007bff;
-  --btn-hover: #0056b3;
-  --danger: #dc3545;
-  --danger-hover: #b52a37;
-}
+   :root {
+      --bg: #f2f2f2;
+      --text: #222;
+      --card: white;
+      --btn: #007bff;
+      --btn-hover: #0056b3;
+      --danger: #dc3545;
+      --danger-hover: #b52a37;
+    }
 
-body.dark {
-  --bg: #121212;
-  --text: #f1f1f1;
-  --card: #1e1e1e;
-}
+    body.dark {
+      --bg: #121212;
+      --text: #f1f1f1;
+      --card: #1e1e1e;
+    }
 
-body {
-  font-family: Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  padding: 30px;
-  transition: all 0.3s ease;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
 
-h1 {
-  text-align: center;
-}
+    h1 {
+      text-align: center;
+    }
 
-.controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 20px;
-}
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
 
-.semester {
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 10px;
-  background: var(--card);
-  margin-bottom: 20px;
-}
+    .semester, .container {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 10px;
+      background: var(--card);
+      margin-bottom: 20px;
+    }
 
-.course {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-}
+    .course {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
 
-input, select {
-  padding: 8px;
-  font-size: 14px;
-  width: 150px;
-}
+    input, select {
+      padding: 8px;
+      font-size: 14px;
+      width: 150px;
+    }
 
-.semester-title {
-  font-size: 16px;
-  padding: 5px;
-  margin-top: 5px;
-  width: 100%;
-  margin-bottom: 10px;
-}
+    .semester-title {
+      font-size: 16px;
+      padding: 5px;
+      margin-top: 5px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
 
-button {
-  padding: 8px 15px;
-  background-color: var(--btn);
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: 10px;
-}
+    button {
+      padding: 8px 15px;
+      background-color: var(--btn);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 10px;
+    }
 
-button:hover {
-  background-color: var(--btn-hover);
-}
+    button:hover {
+      background-color: var(--btn-hover);
+    }
 
-.delete-btn {
-  background-color: var(--danger);
-}
+    .delete-btn {
+      background-color: var(--danger);
+    }
 
-.delete-btn:hover {
-  background-color: var(--danger-hover);
-}
+    .delete-btn:hover {
+      background-color: var(--danger-hover);
+    }
 
-.gpa-output {
-  font-weight: bold;
-  margin-top: 10px;
-}
+    .gpa-output {
+      font-weight: bold;
+      margin-top: 10px;
+    }
 
-#cgpa-output {
-  font-size: 18px;
-  font-weight: bold;
-  color: green;
-  margin-top: 20px;
-  text-align: center;
-}
+    #cgpa-output {
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
+      margin-top: 20px;
+      text-align: center;
+    }
 
-@media (max-width: 600px) {
-  input, select {
-    width: 100%;
-  }
+    .preview-img {
+      max-width: 100%;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
 
-  .course {
-    flex-direction: column;
-  }
-  }
+    canvas {
+      margin: 30px auto;
+      display: block;
+      max-width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      input, select {
+        width: 100%;
+      }
+
+      .course {
+        flex-direction: column;
+      }
+    }
