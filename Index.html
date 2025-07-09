@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GPA & CGPA Calculator</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+  <h1>GPA & CGPA Calculator</h1>
+
+  <div class="controls">
+    <button onclick="addSemester()">➕ Add Semester</button>
+    <button onclick="calculateCGPA()">📊 Calculate CGPA</button>
+    <button onclick="exportToPDF()">📄 Export to PDF</button>
+    <button onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
+  </div>
+
+  <div id="semesters"></div>
+  <div id="cgpa-output"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
